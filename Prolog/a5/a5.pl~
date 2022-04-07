@@ -1,0 +1,9 @@
+myfun(1, 3).
+myfun(2, 4).
+myfun(N, Result) :- 
+	N >= 3, 
+	X1 is N-1,
+	X2 is N-2,
+	myfun(X1, Result1),
+	myfun(X2, Result2),
+	Result is Result1 + Result2R
